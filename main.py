@@ -3,6 +3,7 @@
 Module Docstring
 """
 import sys
+import os.path
 
 __author__ = "Geon George"
 __version__ = "0.1.0"
@@ -18,7 +19,15 @@ def main():
         print("correct usage: python main.py image.jpg")
         return
 
+    # Image file name (and location)
     image = sys.argv[1]
+
+    # Check if file exist
+    if(not os.path.isfile(image)):
+        print("Cannot locate image: "+image)
+        return
+
+    
     print("hello world")
 
 
