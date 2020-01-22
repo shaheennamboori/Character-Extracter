@@ -4,6 +4,7 @@ Module Docstring
 """
 import sys
 import os.path
+from utils.image import processImage
 
 __author__ = "Geon George"
 __version__ = "0.1.0"
@@ -27,8 +28,8 @@ def main():
         print("Cannot locate image: "+image)
         return
 
-    
-    print("hello world")
+    # Proceed to process the image
+    processImage(image)
 
 
 if __name__ == "__main__":
