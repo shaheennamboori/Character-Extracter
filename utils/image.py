@@ -1,5 +1,5 @@
 from PIL import Image,ImageFilter
-import numpy as np
+# import numpy as np
 
 def _openImage(im):
     return Image.open(im)
@@ -9,7 +9,7 @@ def processImage(im):
     # garyscale
     img = img.convert('L')
     # threshold
-    threshold = 170
+    threshold = 160
     img = img.point(lambda p: p > threshold and 255) 
 
     # filter - noise

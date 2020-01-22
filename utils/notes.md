@@ -11,6 +11,12 @@ pic.putdata(pix)
 Image.fromarray(pix)
 ```
 
+dialation and errosion
+```python
+dilation_img = src_img.filter(ImageFilter.MaxFilter(3))
+erosion_img = src_img.filter(ImageFilter.MinFilter(3))
+```
+
 otsu thresholding
 
 ```python
