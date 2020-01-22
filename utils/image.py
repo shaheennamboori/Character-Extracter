@@ -23,5 +23,7 @@ def processImage(im):
 
     # show
     img.show()
-
+    
+    # save
+    img.save('output.jpg')
 
