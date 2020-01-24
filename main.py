@@ -4,7 +4,8 @@ Module Docstring
 """
 import sys
 import os.path
-from utils.image import processImage
+# from utils.image import processImage
+from utils.advanced import processImage
 
 __author__ = "Geon George"
 __version__ = "0.1.0"

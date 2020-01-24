@@ -13,7 +13,7 @@ def processImage(im):
     img = img.point(lambda p: p > threshold and 255) 
 
     # filter - noise
-    img = img.filter(ImageFilter.MedianFilter(5)) 
+    img = img.filter(ImageFilter.MedianFilter(3)) 
 
     # pix = np.array(img)
     
