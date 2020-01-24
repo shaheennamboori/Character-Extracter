@@ -47,3 +47,5 @@ def otsu(gray):
     final_img[gray < final_thresh] = 0
     return final_img
 ```
+
+[convert image to segments](https://stackoverflow.com/questions/10964226/how-to-convert-an-image-into-character-segments)
